@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/output.css">
+
+  <style>
+    #check:checked ~ ul {
+        left: 0;
+    }
+  </style>
+</head>
+<body class="bg-[#F2EFE6] font-primary">
+<!-- NAVBAR START -->
+    <header>
+        <nav class=" bg-[#F2EFE6] w-full fixed h-20 z-50">
+            <input type="checkbox" id="check" hidden>
+              <label for="check" class="float-right text-3xl leading-[80px] mr-6 md:hidden">
+                  <i class="fas fa-bars"></i>
+              </label>
+            <label class="font-bold leading-[80px] md:leading-[80px] pl-4 md:pl-24 text-xl">YP .</label>
+            <ul class="md:mt-7 md:mr-24 md:text-lg text-md float-right mr-10 lg:flex leading-[80px] space-x-4 rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit  top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none bg-[#FEDA0A] md:gap-2">
+                  <li class="ml-4"><a href="index.html">Home</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Portofolio</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- NAVBAR END -->
+
+<!-- Portofolio Start -->
+    <section class="pt-28 pb-10 lg:py-40" id="ALL">
+        <div class="container mx-auto px-5 lg:px-0">
+            <div class="">
+                <img src="../dist/img/Group 465.png" alt="">
+                <h1 class="font-bold text-3xl text-black pt-2">PORTOFOLIO</h1>
+            </div>
+
+            <div class="inline-flex gap-4 pt-4 font-medium">
+                <a href="#ALL" id="allBtn" class="py-2 px-4 bg-white rounded-sm transition-colors duration-300 hover:bg-yellow-500 hover:text-white">ALL</a>
+                <a href="#FOTO" id="photoBtn" class="py-2 px-4 bg-white rounded-sm transition-colors duration-300 hover:bg-yellow-500 hover:text-white ">PHOTO</a>
+                <a href="#VIDEO" id="videoBtn" class="py-2 px-4 bg-white rounded-sm transition-colors duration-300 hover:bg-yellow-500 hover:text-white">VIDEO</a>
+            </div>
+
+            <div id="photoSection" class="hidden">
+                <div class="pt-6 lg:grid lg:grid-cols-3 lg:max-w-full lg:gap-4 " id="FOTO">
+                    <img class="w-full my-2 lg:my-0" src="../dist/img/rumah1.png" alt="">
+                    <img class="w-full my-2 lg:my-0"src="../dist/img/rumah2.png" alt="">
+                    <img class="w-full my-2 lg:my-0"src="../dist/img/rumah3.png" alt="">
+                    <img class="w-full my-2 lg:my-0"src="../dist/img/rumah4.png" alt="">
+                    <img class="w-full my-2 lg:my-0"src="../dist/img/rumah5.png" alt="">
+                    <img class="w-full my-2 lg:my-0"src="../dist/img/rumah6.png" alt="">
+                </div>
+            </div>
+
+            <div id="videoSection" class="hidden">
+                <div class="pt-6 lg:grid lg:grid-cols-3 lg:max-w-full lg:gap-4" id="VIDEO">
+                    <video controls class="my-2 lg:my-0" src="../dist/video/DRONE SHORT.mp4"></video>
+                    <video controls class="my-2 lg:my-0" src="../dist/video/DRONE SHORT.mp4"></video>
+                    <video controls class="my-2 lg:my-0" src="../dist/video/DRONE SHORT.mp4"></video>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/f52321ec77.js" crossorigin="anonymous"></script>
+    <script src="../src/script.js"></script>
+</body>
+</html>

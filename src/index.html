@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/output.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    #check:checked ~ ul {
+        left: 0;
+    }
+  </style>
+</head>
+<body class="bg-[#F2EFE6] font-primary">
+  <!-- NAVBAR START -->
+  <header>
+    <nav class=" bg-[#F2EFE6] w-full fixed h-20 z-50">
+        <input type="checkbox" id="check" hidden>
+          <label for="check" class="float-right text-3xl leading-[80px] mr-6 md:hidden">
+              <i class="fas fa-bars"></i>
+          </label>
+        <label class="font-bold leading-[80px] md:leading-[80px] pl-4 md:pl-24 text-xl">YP .</label>
+        <ul class="md:mt-7 md:mr-24 md:text-lg text-md float-right mr-10 lg:flex leading-[80px] space-x-4 rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit  top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none bg-[#FEDA0A] md:gap-2">
+              <li class="ml-4"><a href="#">Home</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="browseall.html">Portofolio</a></li>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+    </nav>
+  </header>
+  <!-- NAVBAR END -->
+
+  <!-- Hero Section Start -->
+  
+
+  <section id="home" class="pt-20 lg:py-40">
+    <div class="container mx-auto px-6 lg:px-0">
+      <div class="flex flex-wrap">
+        <div  class="w-full lg:w-1/2 lg:px-0 ">
+          <h1 data-aos="fade-right" data-aos-offset="300" data-aos-duration="300" data-aos-easing="ease-in-sine" class="text-xs lg:text-xl lg:text-left lg:mt-[2.5rem] lg:font-medium lg:mb-4 text-center ">Hi, my name is Yuda and based in Bali</h1>
+          <h2 data-aos="fade-right" data-aos-offset="300" data-aos-duration="400" data-aos-easing="ease-in-sine" class="font-bold text-4xl text-center mt-4 lg:text-left  lg:text-[82px] leading-none">Photographer & Videographer</h2>
+          <p data-aos="fade-right" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine" class="text-xs font-light text-center mt-4 lg:text-left lg:mb-4 lg:leading-8 leading-6 ">Hello, I'm Yuda Prawira. A passionate visual storyteller based in Bali, I wear multiple hats as a videographer, photographer, and drone pilot. With an unwavering love for capturing the essence of moments, I've embarked on a journey across this picturesque island. Through the lens of my camera and the skies explored by my drone, </p>
+          <div class="flex justify-center lg:justify-start gap-4 mt-10">
+              <div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine" class="bg-yellow-400 py-2 w-full lg:w-52 flex items-center      justify-center text-center font-semibold ">
+                  <i class="fa-solid fa-envelope mr-2"></i>
+                  <a href="mailto:?to=christiantodwiki@gmail.com">EMAIL ME</a>
+              </div>
+              <div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-sine" class="border-2 border-black py-2 w-full lg:w-52 text-center font-semibold ">
+                  <a href="#">DOWNLOAD CV</a>
+              </div>
+          </div>
+      </div>
+      
+  
+        <div class="w-full lg:w-1/2 lg:px-0 flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine"> 
+          <div class="mt-10 lg:mt-9"> 
+            <img src="../dist/img/gambar1.jpg" class="mx-auto max-w-full lg:max-w-none mt-0 lg:mt-[-10%]" alt=""> <!-- Menggunakan mx-auto untuk posisi default -->
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Hero Section End -->
+
+  <!-- Partner Section Start -->
+  <section class="py-12">
+    <div class="w-full bg-[#222222] p-[40px] lg:p-20">
+      <div class="container mx-auto">
+        <div class="flex justify-center items-center lg:justify-between"> 
+            <div class="hidden lg:block w-full">
+              <h1 class="text-3xl text-white font-bold ">
+                Media Partner 
+              </h1>
+              <p class="mt-4 text-white inline-block lg:pr-11">
+                Lorem ipsum dolor sit amet consectetur. Bibendum risus maecenas pretium commodo maecenas proin ante.
+              </p>
+              <div class="mt-6 text-white ">
+                <a href="#" class="text-white border-2 border-yellow-400 px-6 py-2  inline-block transform transition-transform hover:scale-105">SEE ALL</a>
+              </div>
+            </div>
+            <div class="flex space-x-16 overflow-hidden">
+
+              <div class="flex space-x-16 animate-loop-scroll">
+                <div>
+                  <img src="../dist/img/1.png" class="max-w-none" alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/2.png" class="max-w-none " alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/3.png" class="max-w-none " alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/1.png" class="max-w-none " alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/2.png" class="max-w-none " alt="">
+                </div>
+              </div>
+             
+              <div class="flex  space-x-16 animate-loop-scroll" aria-hidden="true">
+                <div>
+                  <img src="../dist/img/1.png" class="max-w-none " alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/2.png" class="max-w-none " alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/3.png" class="max-w-none " alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/1.png" class="max-w-none " alt="">
+                </div>
+                <div>
+                  <img src="../dist/img/2.png" class="max-w-none " alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Section End -->
+
+  <!-- Foto Section Start -->
+  <section class="pt-14 " id="service">
+    <div class="container mx-auto">
+      <div class="lg:grid lg:grid-cols-3 flex flex-col gap-6 lg:gap-14 justify-center items-center">
+        <div class="relative" data-aos="fade-right" data-aos-offset="359" data-aos-duration="350" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/gambar2.jpg" alt="Gambar 1" class="w-auto lg:w-full hover:bg-transparent">
+          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-80 transition duration-300 flex flex-col justify-center items-center text-white text-center p-4">
+            <h1 class="font-bold text-lg mb-2">Photography</h1>
+            <p class="text-xs mb-5 leading-6">Lorem ipsum dolor sit amet consectetur. In proin ipsum ultricies sit egestas nam nisl turpis nec. </p>
+            <a href="#" class="px-4 py-2 text-black text-xs bg-yellow-400 transform transition-transform hover:scale-105">See Details</a>
+          </div>
+        </div>
+        <div class="relative" data-aos="fade-right" data-aos-offset="300" data-aos-duration="450" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/gambar4.jpg" alt="Gambar 1" class="w-auto lg:w-full hover:bg-transparent">
+          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-80 transition duration-300 flex flex-col justify-center items-center text-white text-center p-4">
+            <h1 class="font-bold text-lg mb-2">Videography</h1>
+            <p class="text-xs mb-5 leading-6">Lorem ipsum dolor sit amet consectetur. In proin ipsum ultricies sit egestas nam nisl turpis nec. </p>
+            <a href="#" class="px-4 py-2 text-black text-xs bg-yellow-400 transform transition-transform hover:scale-105">See Details</a>
+          </div>
+        </div>
+        <div class="relative" data-aos="fade-right" data-aos-offset="300" data-aos-duration="550" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/gambar3.jpg" alt="Gambar 1" class="w-auto lg:w-full hover:bg-transparent">
+          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-80 transition duration-300 flex flex-col justify-center items-center text-white text-center p-4">
+            <h1 class="font-bold text-lg mb-2">Drone pilot</h1>
+            <p class="text-xs mb-5 leading-6">Lorem ipsum dolor sit amet consectetur. In proin ipsum ultricies sit egestas nam nisl turpis nec. </p>
+            <a href="#" class="px-4 py-2 text-black text-xs bg-yellow-400 transform transition-transform hover:scale-105">See Details</a>
+          </div>
+        </div>
+    
+      </div>
+    </div> 
+  </section>
+  <!-- Foto Section End -->
+
+  <!-- Sample Shoot Section Start -->
+  <section class="pt-20">
+    <div class="container mx-auto">
+      <div class="justify-center items-center ">
+        <img src="../dist/img/Group 463.png" alt="" class="mx-auto max-w-full">
+        <h1 class="text-3xl font-extrabold text-center pt-3">PORTOFOLIO</h1>
+      </div>
+      
+      <!-- Mobile -->
+      <div class="lg:hidden flex flex-col justify-center items-center gap-6 mt-9">
+        <div class="flex justify-center items-center" data-aos="fade-right" data-aos-offset="300" data-aos-duration="300" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah1.png" alt="" width="80%" class="">
+        </div>
+        <div class="flex justify-center items-center" data-aos="fade-right" data-aos-offset="350" data-aos-duration="550" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah4.png" alt="" width="80%" class="">
+        </div>
+      </div>
+
+      <div class="hidden lg:grid grid-cols-3 gap-4 mt-14">
+        <!-- Baris 1 -->
+        <div class="col-span-1" data-aos="fade-right" data-aos-offset="300" data-aos-duration="350" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah1.png" alt="Gambar 1" class="w-full">
+        </div>
+        <div class="col-span-1" data-aos="fade-right" data-aos-offset="300" data-aos-duration="400" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah2.png" alt="Gambar 2" class="w-full">
+        </div>
+        <div class="col-span-1" data-aos="fade-right" data-aos-offset="300" data-aos-duration="450" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah3.png" alt="Gambar 3" class="w-full">
+        </div>
+        <!-- Baris 2 -->
+        <div class="col-span-1" data-aos="fade-right" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah4.png" alt="Gambar 4" class="w-full">
+        </div>
+        <div class="col-span-1" data-aos="fade-right" data-aos-offset="300" data-aos-duration="550" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah5.png" alt="Gambar 5" class="w-full">
+        </div>
+        <div class="col-span-1" data-aos="fade-right" data-aos-offset="300" data-aos-duration="600" data-aos-easing="ease-in-sine">
+          <img src="../dist/img/rumah6.png" alt="Gambar 6" class="w-full">
+        </div>
+      </div>
+      
+
+      <div class="mt-8 flex justify-center items-center lg:mt-12 transform transition-transform hover:scale-105">
+        <a href="#" class="text-sm text-black font-semibold px-8 py-4 bg-yellow-400">BROWSE ALL</a>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- Sample Shoot Section End -->
+
+  <!-- Best Drone Section Start -->
+  <section class="py-12 mb-10 lg:bg-[#222222] lg:mt-24">
+    <div class="container mx-auto">
+      <div class="bg-[#222222] lg:flex  lg:items-center">
+        <div class="flex justify-center items-center p-4 pt-12 ">
+          <video controls width="90%" height="100%" class="lg:w-full lg:h-full" src="../dist/video/DRONE SHORT.mp4"></video>
+        </div>
+        <div class="flex flex-wrap justify-center items-center text-center lg:text-start lg:justify-start text-white pt-4">
+          <h1 class="font-bold text-2xl lg:text-4xl lg:px-12">Best Drone Shots</h1>
+          <p class="text-xs pt-4 px-4 leading-loose lg:px-12 lg:pt-2">
+            Lorem ipsum dolor sit amet consectetur. Et ac nisi sit sem arcu fermentum in eget. Suspendisse sed non tincidunt etiam enim ante aliquam elit. Ipsum ultricies vulputate massa ornare tempus egestas.
+          </p>
+          <div class="mt-4 text-white flex justify-center items-center pb-14 lg:pb-0 lg:px-12 transform transition-transform hover:scale-105">
+            <a href="#" class="py-3 px-8 border-2 border-yellow-400">EXPLORE ALL VIDEOS</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Best Drone Section End -->
+
+  <!-- Villain Section Start -->
+  <section class="py-12 lg:hidden ">
+    <div class="container mx-auto px-6 lg:px-0 lg:py-12 lg:max-w-[1200px]">
+      <div class="flex flex-wrap lg:flex-nowrap lg:justify-between">
+        <div class="lg:py-20" >
+          <div class="w-full lg:px-0">
+            <img src="../dist/img/aboutme.png"  class="" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-duration="400" data-aos-easing="ease-in-sine" >
+            <p data-aos="fade-right" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine" class="text-xs font-light  mt-4 lg:text-left lg:mb-4 lg:leading-8 leading-6 ">Hello, I'm Yuda Prawira. A passionate visual storyteller based in Bali, I wear multiple hats as a videographer, photographer, and drone pilot. With an unwavering love for capturing the essence of moments, I've embarked on a journey across this picturesque island. Through the lens of my camera and the skies explored by my drone</p>
+          </div>
+        </div>
+        
+      
+  
+        <div class="w-full  lg:px-0 flex justify-center"> 
+          <div class="mt-6 lg:mt-9"> 
+            <img src="../dist/img/gambar5.png" data-aos="fade-right" data-aos-offset="300" data-aos-duration="550" data-aos-easing="ease-in-sine"  class="mx-auto max-w-full w-full mt-0 lg:mt-[-10%] lg:w-[500px] lg:h-[500px]" alt=""> <!-- Menggunakan mx-auto untuk posisi default -->
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Villain Section End -->
+
+  <!-- Villain Desktop Start -->
+  <section class="hidden lg:block lg:py-12" id="aboutme">
+    <div class="flex justify-center items-center py-8">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <!-- Konten Kiri (Tulisan) -->
+        <div class="text-center lg:text-left lg:w-1/2 lg:pr-8">
+            <img src="../dist/img/aboutme.png" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-duration="400" data-aos-easing="ease-in-sine">
+            <p data-aos="fade-right" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine" class="text-base font-light pt-5 leading-loose ">Hello, I'm Yuda Prawira. A passionate visual storyteller based in Bali, I wear multiple hats as a videographer, photographer, and drone pilot. With an unwavering love for capturing the essence of moments, I've embarked on a journey across this picturesque island. Through the lens of my camera and the skies explored by my drone</p>
+        </div>
+        <!-- Konten Kanan (Gambar) -->
+        <div class=" ">
+            <img src="../dist/img/gambar5.png"  alt="Gambar" data-aos="fade-right" data-aos-offset="300" data-aos-duration="550" data-aos-easing="ease-in-sine" class="w-[500px] items-center">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Villain Desktop End -->
+
+  <!-- Section Interest Start  -->  
+  <section class="pt-7 " id="contactme">
+    <div class="container mx-auto py-9" style="background-image: url('../dist/img/Rectangle\ 16.png');">
+      <div class="text-center lg:flex lg:justify-between lg:px-9">
+        <h1 class="uppercase text-lg text-white">interested to work with me ?</h1>
+        <div class="pt-4 lg:pt-0 transform transition-transform hover:scale-105">
+          <a href="https://api.whatsapp.com/send?phone=6282237886327" class="uppercase text-black font-semibold py-3 px-8 bg-yellow-400">let's talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section Interest End -->
+  
+  <!-- Section Testimonial Start-->
+  <section class="py-24">
+    <div class="container mx-auto">
+      <div class="flex justify-center items-center">
+        <img src="../dist/img/Group 464.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-3xl text-center text-black pt-3 font-bold lg:text-4xl">What Are clients say</h1>
+      </div>
+
+      <!-- Swiper -->
+      <div class="pt-12 mySwiper px-6 lg:px-0">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="bg-gray-100 p-4 rounded-3xl shadow max-w-sm mx-auto swiper-slide ">
+            <div class="pt-8 flex pl-5">
+              <img src="../dist/img/Ellipse 1.png" alt="">
+              <div class="pl-4">
+                <h1 class="font-semibold text-base">Jack Sparrow</h1>
+                <p>Business Man</p>
+              </div>
+            </div>
+            <!-- Description -->
+            <div class="pt-9 px-6 text-center">
+              <p class="font-light lg:leading-7">
+                “Lorem ipsum dolor sit amet consectetur. Maecenas eget quam risus sociis ac dignissim imperdiet. Pharetra gravida est ac integer malesuada. Quis nullam iaculis non mattis euismod ultrices sit odio lectus. Mauris at dictum facilisi quam.”
+              </p>
+            </div>
+            <!-- Stars Comment -->
+            <div class="flex justify-center items-center pt-9 pb-4">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+            </div>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-3xl shadow max-w-sm mx-auto swiper-slide ">
+            <div class="pt-8 flex pl-5">
+              <img src="../dist/img/Ellipse 2.png" alt="">
+              <div class="pl-4">
+                <h1 class="font-semibold text-base">Jack Sparrow</h1>
+                <p>Business Man</p>
+              </div>
+            </div>
+            <!-- Description -->
+            <div class="pt-9 px-6 text-center">
+              <p class="font-light lg:leading-7">
+                “Lorem ipsum dolor sit amet consectetur. Maecenas eget quam risus sociis ac dignissim imperdiet. Pharetra gravida est ac integer malesuada. Quis nullam iaculis non mattis euismod ultrices sit odio lectus. Mauris at dictum facilisi quam.”
+              </p>
+            </div>
+            <!-- Stars Comment -->
+            <div class="flex justify-center items-center pt-9 pb-4">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+            </div>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-3xl shadow max-w-sm mx-auto swiper-slide  ">
+            <div class="pt-8 flex pl-5">
+              <img src="../dist/img/Ellipse 3.png" alt="">
+              <div class="pl-4">
+                <h1 class="font-semibold text-base">Jack Sparrow</h1>
+                <p>Business Man</p>
+              </div>
+            </div>
+            <!-- Description -->
+            <div class="pt-9 px-6 text-center">
+              <p class="font-light lg:leading-7">
+                “Lorem ipsum dolor sit amet consectetur. Maecenas eget quam risus sociis ac dignissim imperdiet. Pharetra gravida est ac integer malesuada. Quis nullam iaculis non mattis euismod ultrices sit odio lectus. Mauris at dictum facilisi quam.”
+              </p>
+            </div>
+            <!-- Stars Comment -->
+            <div class="flex justify-center items-center pt-9 pb-4">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+              <img src="../dist/img/material-symbols_star.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add Pagination -->
+      </div>
+    </div>
+  </section>
+  <!-- Section Testimonial end -->
+
+  <!-- Footer Star -->
+  <section class="pt-12 pb-16 lg:pb-24 bg-[#222222]">
+    <div class="container mx-auto px-6 lg:px-0">
+      <div class="pt-16">
+        <h1 class="font-bold text-white text-4xl">YP.</h1>
+      </div>
+
+      <div class="pt-4 text-[#C9C9C9] lg:flex lg:justify-between lg:items-center">
+        <div class="lg:max-w-3xl">
+          <p class="text-sm leading-10 lg:w-full">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius voluptates corrupti iste cum qui ab earum, aut perferendis natus corporis commodi 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+        
+        <div>
+          <ul class="lg:flex pt-12 text-base lg:gap-9">
+            <a href=""><li class="pt-5 lg:pt-0">Blog</li></a>
+            <a href=""><li class="pt-5 lg:pt-0">Terms & Conditions</li></a>
+            <a href=""><li class="pt-5 lg:pt-0">Privacy Policy</li></a>
+            <a href=""><li class="pt-5 lg:pt-0">Contact Me</li></a>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Footer End -->
+  
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/f52321ec77.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+

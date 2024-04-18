@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .menu-toggle span:nth-child(2){
+            transform-origin: 0 0;
+        }
+
+        .menu-toggle span:nth-child(4){
+            transform-origin: 0 100%;
+        }
+
+        /* ketika menu input toggle ini dichecklist cari css yang merupakan span yang dia anak ke 2  */
+        .menu-toggle input:checked ~ span:nth-child(2){
+            transform: rotate(45deg) translate(-1px , -1px);
+        }
+
+        .menu-toggle input:checked ~ span:nth-child(4){
+            transform: rotate(-45deg) translate(-1px , 0);
+        }
+
+        .menu-toggle input:checked ~ span:nth-child(3){
+            opacity: 0;
+            transform: scale(0);
+        }
+
+    </style>
+</head>
+<body class="font-primary">
+<!-- Navbar Section -->
+    <nav class=" bg-white border-b-[0.5px] border-black  fixed z-20 w-full">
+        <div class="flex justify-between lg:mx-11 items-center py-3 mx-2 ">
+            <div class="flex">
+                <div class="flex items-center">
+                    <img src="../dist/img/Group 9 (2).png" class="lg:mt-2" alt="">
+                </div>
+        
+                <ul class="lg:flex  lg:items-center lg:ml-7 lg:gap-[47px] text-[#6F6F6F]  md:hidden hidden">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="lg:hidden"><a href="#">Sign In</a></li>
+                    <li class="lg:hidden"><a href="#">Sign Up</a></li>
+                </ul>
+
+                <ul class="lg:hidden md:block hidden absolute mt-20 h-[50%] left-0 flex-col justify-between w-full transition-all z-20 top-0 " id="MobileBar">
+                    <div class="bg-white pt-6 pl-4">
+                        <form action="#" class=" relative flex items-center">
+                            <input type="search" name="q" placeholder="Search Destination..." class="w-full py-2 border-2 border-gray-500 rounded-md pl-4 pr-28 mr-6">
+                            <img src="../dist/img/material-symbols-light_search.png" class="absolute right-8" alt="">
+                        </form>
+                    </div>
+                    <li class="flex items-center  bg-white pl-4 pt-3">
+                        <img src="../dist/img/home.png" class="" alt="Home Logo">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="flex items-center bg-white pl-4 pt-3">
+                        <img src="../dist/img/destination.png" class="" alt="Home Logo">
+                        <a href="#">Product</a>
+                    </li>
+                    <li class="flex items-center bg-white pl-4 pt-3">
+                        <img src="../dist/img/gallery.png" class="" alt="Home Logo">
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="flex items-center bg-white pl-4 pt-3">
+                        <img src="../dist/img/contact.png" class="" alt="Home Logo">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="flex items-center bg-white pl-4 pt-3">
+                        <img src="../dist/img/signin.png" class="" alt="Home Logo">
+                        <a href="#">Sign In</a>
+                    </li>
+                    <li class="flex items-center bg-white pl-4 pb-6 pt-3">
+                        <img src="../dist/img/signup.png" class="" alt="Home Logo">
+                        <a href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+                
+           
+    
+            <div class="md:hidden hidden lg:flex">
+                <!-- Searchbar -->
+                <div class="">
+                        <form action="#" class=" relative flex items-center">
+                            <input type="search" name="q" placeholder="Search Destination..." class="w-full py-3 border-2 border-gray-500 rounded-md pl-4 pr-28 mr-6">
+                            <img src="../dist/img/material-symbols-light_search.png" class="absolute right-8" alt="">
+                        </form>
+                </div>
+                <!--  -->
+                
+                <!-- button -->
+                <div class="">
+                    <button class="py-3 px-7 mr-6 rounded-md  text-white bg-sky-500 font-semibold" type="submit">Sign In</button>
+                    <button class="py-3 px-5 rounded-md border-2 border-sky-500 bg-white text-sky-500 font-semibold" type="submit">Sign Up</button>
+                </div>
+                <!--  -->
+            </div>  
+            <div class="menu-toggle lg:hidden  md:flex md:flex-col  flex flex-col gap-1 relative mr-2">
+                <input type="checkbox" class="absolute w-10 h-7 -left-2 opacity-0 cursor-pointer z-[2]" id="menu-toggle-checkbox"> 
+                <span class="bg-black w-7 h-1 rounded-sm transition-all "></span>
+                <span class="bg-black w-7 h-1 rounded-sm transition-all"></span>
+                <span class="bg-black w-7 h-1 rounded-sm transition-all"></span>
+            </div>
+        </div>
+        
+       
+
+    </nav>
+<!-- Nabar Section -->
+    
+<!-- Carousel -->
+<section class="lg:pt-14" id="Home">
+    <div class="">
+        <div class="swiper mySwiper w-full h-[500px] mt-4 ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide " style="background-image: url('../dist/img/gambar1.jpg'); background-size: cover; background-position: 450%;">
+                    <div class="mt-6 ml-11  md:ml-16 md:mt-36">
+                        <h1 class=" text-3xl font-bold text-white mb-8 font-body">Pura Uluwatu</h1>
+                        <p class="pr-14 text-white font-body mb-16 hidden md:block">Pura Luhur Uluwatu adalah salah satu tempat terbaik di Bali untuk menikmati matahari terbenam, dengan pemandangan langsung menghadap Samudra Hindia yang indah. Tanpa diragukan lagi, apa yang membuat Pura Uluwatu spektakuler adalah tebing setinggi 250 kaki di atas ombak Samudera Hindia. Sebuah hutan kecil terletak di sekitar Uluwatu dan ratusan monyet tinggal di sana. Mereka dipercaya oleh masyarakat sebagai penjaga kesucian kawasan.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide " style="background-image: url('../dist/img/gambar2.jpg'); background-size: cover; background-position: 0%;">
+                    <div class="mt-6 ml-11  md:ml-16 md:mt-36">
+                        <h1 class=" text-3xl font-bold text-white mb-8 font-body">Kelingking Beach</h1>
+                        <p class="pr-14 text-white font-body mb-16 hidden md:block">Pantai Kelingking Bali merupakan salah satu tempat paling ikonik di Nusa Penida. Pantai ini bersembunyi di desa Bunga Mekar, tepatnya berada di Barat Daya Pulau Nusa Penida.Kamu tidak dapat menemukan tempat yang memesona dan pantai seindah ini, kecuali di Kelingking Beach Bali. Meski butuh effort untuk menikmati keindahan Pantai ini, dimana kamu harus melewati tebing berbatu, tanpa akses jalur dan pegangan yang kuat.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide " style="background-image: url('../dist/img/gambar3.jpg'); background-size: cover; background-position: 0%;">
+                    <div class="mt-6 ml-11  md:ml-16 md:mt-36">
+                        <h1 class=" text-3xl font-bold text-white mb-8 font-body">Ubud Gianyar</h1>
+                        <p class="pr-14 text-white font-body mb-16 hidden md:block">Dikelilingi jurang hutan dan kaki bukit yang hijau, Ubud telah lama menjadi pusat tradisi seni dan kehidupan spiritual Bali. Kota ini sendiri bukan lagi desa hippie yang damai, namun komunitas kebugarannya berkembang pesat. Di sini ada banyak kelas yoga, pusat meditasi, serta pilihan hidangan mentah dan vegan.Jika pusat kota terlalu ramai untuk Anda, ada banyak pilihan aktivitas alam dan pura yang dekat lokasinya, mulai dari haiking pagi di Gunung Batur hingga pura ikonik seperti Pura Tirta Empul (yang bahkan lebih cantik jika dilihat langsung).
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide " style="background-image: url('../dist/img/gambar4.jpg'); background-size: cover; background-position: 60%;">
+                    <div class="mt-6 ml-11  md:ml-16 md:mt-36">
+                        <h1 class=" text-3xl font-bold text-white mb-8 font-body">Gunung Batur</h1>
+                        <p class="pr-14 text-white font-body mb-16 hidden md:block">Gunung Batur adalah sebuah gunung berapi aktif di Kecamatan Kintamani, Kabupaten Bangli, Bali, Indonesia.[1] Sisi tenggara dari kaldera yang berukuran 10 x 13 km ini sebagian besar berisi danau kaldera. Baik kaldera yang lebih besar, dan kaldera yang lebih kecil 7,5 km dibentuk oleh runtuhnya ruang magma gunung , keruntuhan lebih besar pertama terjadi sekitar 29.300 tahun yang lalu, dan kaldera bagian dalam runtuh kedua kalinya sekitar 20.150 tahun yang lalu.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide " style="background-image: url('../dist/img/gambar5.png'); background-size: cover; background-position: top;">
+                    <div class="mt-6 ml-11  md:ml-16 md:mt-36">
+                        <h1 class=" text-3xl font-bold text-white mb-8 font-body">Pantai Kuta</h1>
+                        <p class="pr-14 text-white font-body mb-16 hidden md:block">Pantai Kuta adalah sebuah tempat pariwisata yang terletak di kecamatan Kuta sebelah selatan Kota Denpasar, Bali, Indonesia. Daerah ini merupakan sebuah tujuan wisata turis mancanegara dan telah menjadi objek wisata andalan Pulau Bali sejak awal tahun 1970-an. Pantai Kuta sering pula disebut sebagai pantai matahari terbenam sebagai lawan dari pantai Sanur. Selain itu, Lapangan Udara I Gusti Ngurah Rai terletak tidak jauh dari Kuta.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide " style="background-image: url('../dist/img/gambar2.jpg'); background-size: cover; background-position: top;">
+                    <div class="mt-6 ml-11  md:ml-16 md:mt-36">
+                        <h1 class=" text-3xl font-bold text-white mb-8 font-body">Bali Zoo</h1>
+                        <p class="pr-14 text-white font-body mb-16 hidden md:block">Bali Zoo merupakan kebun binatang yang dibuka pada tahun 2002 dan menjadi salah satu kebun binatang terbaik di Asia Pasifik. Kebun binatang ini tidak hanya menjadi tempat rekreasi keluarga saja, namun juga menjadi tempat untuk melestarikan berbagai satwa yang hampir punah. Dengan luas 3,5 hektar, kebun binatang ini sudah memiliki hingga 450 jenis satwa langka seperti merak, jalak Bali, harimau Sumatra, kasuari, singa, elang, rusa, singa Afrika, unta hingga kanguru.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Carousel -->
+
+<!-- Top Values Section -->
+<section class="pt-16">
+    <div class="container mx-auto">
+        <div class="flex-col justify-center">
+            <h1 class="text-black font-bold lg:text-5xl text-3xl text-center">Top Values Destination</h1>
+            <p class="text-sm lg:text-xl text-[#656565] text-center pt-4">Try Variety Of Benefits When Using Our Service</p>
+        </div>
+
+        <div class="lg:pt-16 pt-14 flex flex-col lg:flex lg:flex-row justify-center items-center lg:gap-16">
+            <div class=" flex flex-col justify-center items-center">
+                <img src="../dist/asset/topvalues3.png" alt="">
+                <h1 class="pt-4 text-black text-lg text-center font-bold">Easy Booking</h1>
+                <p class="pt-4 text-[#656565] whitespace-nowrap text-center">Quick And Very Easy Booking <br class="whitespace-normal">System</p>
+            </div>
+
+            <div class=" flex flex-col justify-center items-center pt-11 lg:pt-0">
+                <img src="../dist/asset/topvalues2.png" alt="">
+                <h1 class="pt-4 text-black text-lg text-center font-bold">Easy Booking</h1>
+                <p class="pt-4 text-[#656565] whitespace-nowrap text-center">Quick And Very Easy Booking <br class="whitespace-normal">System</p>
+            </div>
+
+            <div class=" flex flex-col justify-center items-center pt-11 lg:pt-0">
+                <img src="../dist/asset/topvalues1.png" alt="">
+                <h1 class="pt-4 text-black text-lg text-center font-bold">Easy Booking</h1>
+                <p class="pt-4 text-[#656565] whitespace-nowrap text-center">Quick And Very Easy Booking <br class="whitespace-normal">System</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Top Values Section -->
+
+<!-- Destination Section -->
+<section class="pt-16 pb-11">
+    <div class="container mx-auto">
+        <div class="lg:mt-20">
+            <h1 class="text-2xl font-bold text-center lg:text-[64px] lg:text-start">Choose Your Destination</h1>
+        </div>
+        <div class="mt-9 flex flex-col lg:grid lg:grid-cols-3 gap-16 justify-center items-center">
+            <div class="rounded-2xl border border-black ">
+                <div class="relative">
+                    <img src="../dist/img/rumah1.png" class="w-[291px] rounded-2xl h-[317px] lg:w-full lg:h-[470px] " alt="">
+                    <div class="absolute top-3 right-2 bg-white opacity-90 w-16 h-8  rounded-2xl flex justify-center items-center cursor-pointer">
+                        <p class="pr-1">5.0 </p>
+                        <img src="../dist/asset/Vector.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5 flex justify-between px-3 pb-4">
+                    <div>
+                        <h1 class="font-semibold ">Uluwatu Temple</h1>
+                        <h1 class="font-bold">Rp.100.000/<span class="font-normal">Person</span></h1>
+                    </div>
+                    <a href="#" class="mt-3">
+                        <img src="../dist/img/Group 39.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl border border-black">
+                <div class="relative">
+                    <img src="../dist/img/rumah1.png" class="w-[291px] rounded-2xl h-[317px] lg:w-full lg:h-[470px] " alt="">
+                    <div class="absolute top-3 right-2 bg-white opacity-90 w-16 h-8  rounded-2xl flex justify-center items-center cursor-pointer">
+                        <p class="pr-1">5.0 </p>
+                        <img src="../dist/asset/Vector.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5 flex justify-between px-3 pb-4">
+                    <div>
+                        <h1 class="font-semibold ">Uluwatu Temple</h1>
+                        <h1 class="font-bold">Rp.100.000/<span class="font-normal">Person</span></h1>
+                    </div>
+                    <a href="#" class="mt-3">
+                        <img src="../dist/img/Group 39.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl border border-black">
+                <div class="relative">
+                    <img src="../dist/img/rumah1.png" class="w-[291px] rounded-2xl h-[317px] lg:w-full lg:h-[470px] " alt="">
+                    <div class="absolute top-3 right-2 bg-white opacity-90 w-16 h-8  rounded-2xl flex justify-center items-center cursor-pointer">
+                        <p class="pr-1">5.0 </p>
+                        <img src="../dist/asset/Vector.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5 flex justify-between px-3 pb-4">
+                    <div>
+                        <h1 class="font-semibold ">Uluwatu Temple</h1>
+                        <h1 class="font-bold">Rp.100.000/<span class="font-normal">Person</span></h1>
+                    </div>
+                    <a href="#" class="mt-3">
+                        <img src="../dist/img/Group 39.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl border border-black">
+                <div class="relative">
+                    <img src="../dist/img/rumah1.png" class="w-[291px] rounded-2xl h-[317px] lg:w-full lg:h-[470px] " alt="">
+                    <div class="absolute top-3 right-2 bg-white opacity-90 w-16 h-8  rounded-2xl flex justify-center items-center cursor-pointer">
+                        <p class="pr-1">5.0 </p>
+                        <img src="../dist/asset/Vector.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5 flex justify-between px-3 pb-4">
+                    <div>
+                        <h1 class="font-semibold ">Uluwatu Temple</h1>
+                        <h1 class="font-bold">Rp.100.000/<span class="font-normal">Person</span></h1>
+                    </div>
+                    <a href="#" class="mt-3">
+                        <img src="../dist/img/Group 39.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl border border-black">
+                <div class="relative">
+                    <img src="../dist/img/rumah1.png" class="w-[291px] rounded-2xl h-[317px] lg:w-full lg:h-[470px] " alt="">
+                    <div class="absolute top-3 right-2 bg-white opacity-90 w-16 h-8  rounded-2xl flex justify-center items-center cursor-pointer">
+                        <p class="pr-1">5.0 </p>
+                        <img src="../dist/asset/Vector.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5 flex justify-between px-3 pb-4">
+                    <div>
+                        <h1 class="font-semibold ">Uluwatu Temple</h1>
+                        <h1 class="font-bold">Rp.100.000/<span class="font-normal">Person</span></h1>
+                    </div>
+                    <a href="#" class="mt-3">
+                        <img src="../dist/img/Group 39.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl border border-black">
+                <div class="relative">
+                    <img src="../dist/img/rumah1.png" class="w-[291px] rounded-2xl h-[317px] lg:w-full lg:h-[470px] " alt="">
+                    <div class="absolute top-3 right-2 bg-white opacity-90 w-16 h-8  rounded-2xl flex justify-center items-center cursor-pointer">
+                        <p class="pr-1">5.0 </p>
+                        <img src="../dist/asset/Vector.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5 flex justify-between px-3 pb-4">
+                    <div>
+                        <h1 class="font-semibold ">Uluwatu Temple</h1>
+                        <h1 class="font-bold">Rp.100.000/<span class="font-normal">Person</span></h1>
+                    </div>
+                    <a href="#" class="mt-3">
+                        <img src="../dist/img/Group 39.png" alt="">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- Destinationn Section -->
+
+<!-- Gallery Section -->
+<section id="gallery" class="pt-24 pb-32 bg-white font-body">
+    <div class="mx-auto container ">
+        <div class="px-4 w-full ">
+            <div class="max-w-xl mx-auto text-center mb-16 ">
+                <h1 class="text-3xl lg:text-5xl font-bold text-black mb-1 font-tittle">Welcome To Gallery</h1>
+            </div>
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                <!-- image - start -->
+                <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="{{ asset('img/Kecak.jpg') }}" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Kecak - Uluwatu</span>
+                </a>
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                    <img src="{{ asset('img/beach.jpg') }}" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Kelingking - Beach</span>
+                </a>
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                    <img src="{{ asset('img/ayunan.jpg') }}" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 " />
+
+                    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Ubud - Rice Field View</span>
+                </a>
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="{{ asset('img/Hiking.jpg') }}" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Batur - Hiking</span>
+                </a>
+                <!-- image - end -->
+                <!-- image - start -->
+                <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="{{ asset('img/surf.jpg') }}" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Surf - Kuta</span>
+                </a>
+                <!-- image - end -->
+
+                <!-- image - start -->
+                <a href="#" class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                    <img src="{{ asset('img/feeding.jpg') }}" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Bali Zoo - Animal Feeding</span>
+                </a>
+                <!-- image - end -->
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Gallery Section -->
+    
+<!-- Lets Travel Us Section -->
+<section class="pb-24 relative">
+    <div class="container mx-auto">
+        <img src="../dist/img/Rectangle 40.jpg" class="w-full h-80 lg:h-full" alt="">
+        <div class="absolute inset-0 flex justify-center items-center">
+            <div class="absolute inset-0 bg-black opacity-50 rounded-3xl h-80 lg:h-[500px] lg:w-[1539px] lg:top-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 "></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <h1 class="text-white text-3xl lg:text-6xl font-bold ">Lets Travel Bali</h1>
+                <h1 class="mt-1 text-white text-3xl lg:text-6xl font-bold pt-3">With Us</h1>
+                <a href="#" class="mt-4 lg:mt-9 text-black font-semibold bg-white py-4 px-5 rounded-2xl lg:px-16 cursor-pointer">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Lets Travel Us Section -->
+
+<!-- Footer Section -->
+    
+<!-- Footer Section -->
+  
+<!-- JS -->
+
+<script type="module" src="../src/swiper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const menuToggleCheckbox = document.getElementById('menu-toggle-checkbox');
+    const mobileMenu = document.getElementById("MobileBar");
+
+    menuToggleCheckbox.addEventListener('change', () => {
+        if (menuToggleCheckbox.checked) {
+            mobileMenu.classList.remove('hidden');
+        } else {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+
+
+</script>
+</body>
+</html>
